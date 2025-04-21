@@ -1,0 +1,71 @@
+# Create a new HTML file with the same content for download
+
+html_code = """
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GTA 5 RP | BLACK</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .hero-section {
+      background-image: url('https://link-to-your-image.com'); /* Здесь ссылка на твоё изображение */
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body class="bg-black text-white font-sans">
+  <!-- Hero Section -->
+  <section class="hero-section h-screen flex flex-col justify-center items-center text-center">
+    <h1 class="text-5xl md:text-7xl font-bold mb-4">
+      <span class="text-white font-bold">BLACK</span>
+    </h1>
+  </section>
+
+  <!-- About Section -->
+  <section class="py-16 px-6 md:px-20 bg-gray-900">
+    <h2 class="text-3xl font-bold mb-4">О Нас</h2>
+    <p class="text-gray-400 max-w-3xl">Наша семья — это команда, братство и уважение. Мы держим слово, поддерживаем своих и не боимся конфликтов. Играем по ролям, по уму и по стилю.</p>
+  </section>
+
+  <!-- Requirements Section -->
+  <section class="py-16 px-6 md:px-20 bg-black">
+    <h2 class="text-3xl font-bold mb-4">Требования для вступления</h2>
+    <ul class="list-disc list-inside text-gray-400">
+      <li>18+ лет IRL</li>
+      <li>Наличие микрофона и адекватного общения</li>
+      <li>Опыт в RP приветствуется</li>
+      <li>Уважение к правилам проекта и нашей семье</li>
+    </ul>
+  </section>
+
+  <!-- Application Form Section -->
+  <section class="py-16 px-6 md:px-20 bg-gray-900">
+    <h2 class="text-3xl font-bold mb-8">Подать заявку</h2>
+    <form class="max-w-xl mx-auto space-y-6">
+      <input type="text" placeholder="Никнейм в игре" class="w-full p-3 bg-black border border-gray-700 rounded-xl text-white placeholder-gray-500">
+      <input type="text" placeholder="Возраст IRL" class="w-full p-3 bg-black border border-gray-700 rounded-xl text-white placeholder-gray-500">
+      <input type="text" placeholder="Опыт в RP / был ли в семьях" class="w-full p-3 bg-black border border-gray-700 rounded-xl text-white placeholder-gray-500">
+      <input type="text" placeholder="Telegram для связи" class="w-full p-3 bg-black border border-gray-700 rounded-xl text-white placeholder-gray-500">
+      <textarea placeholder="Почему хочешь вступить?" class="w-full p-3 bg-black border border-gray-700 rounded-xl text-white placeholder-gray-500"></textarea>
+      <button type="submit" class="w-full bg-white text-black font-bold py-3 rounded-xl hover:bg-gray-200 transition">Отправить заявку</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 text-center text-gray-500 text-sm bg-black border-t border-gray-800">
+    <span class="font-bold text-white">"BLACK"</span> © 2025 | Связь: <a href="#" class="underline">Telegram</a>
+  </footer>
+</body>
+</html>
+"""
+
+# Save the HTML content to a new file
+file_path = "/mnt/data/gta5rp_black_family_site_v2.html"
+with open(file_path, "w") as file:
+    file.write(html_code)
+
+file_path
